@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e6ffb3;}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
+</head>
+<body>
+<h1><center>APPLICATION FORM</center></h1>
+<marquee scrollamount="5">**ALL FIELDS ARE MANDETORY**</marquee>
+<p></p>
+<table border="1" align="center">
+<tr>
+<td>
+<form action="action_page.php">
+   NAME:</td>
+ <td><input type="text" name="name" placeholder="NAME OF THE CANDIDATE" required="">
+  </td></tr>
+  <tr><td>EMAIL: </td>
+  <td><input type="text" name="EMAIL" placeholder="EMAIL-ID" required=""></td></tr>
+  <tr><td>PHONE-NUMBER: </td>
+  <td><input type="text" name="NUMBER" placeholder="CONTACT-NUMBER" required=""></td></tr>
+  <tr><td>SEX: </td>
+  <td><input type="radio" name="gender" value="male"> Male</td></tr>
+  <tr><td></td><td><input type="radio" name="gender" value="female"> Female</td></tr>
+  <tr><td></td><td><input type="radio" name="gender" value="other"> Other</td></tr>
+  <tr><td>LANGUAGE: </td>
+  <td><input type="checkbox" name="english">ENGLISH</td>
+  <tr><td></td><td><input type="checkbox" name="hindi">HINDI</td></tr>
+  <tr><td></td><td><input type="checkbox" name="others">OTHERS</td></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr></tr>
+  <tr><td><input type="submit" value="SUBMIT"></td>
+  <td><input type="Submit" value="CANCEL"></td></tr>
+  </table>
+  </table>
+</form> 
+</body>
+</html>

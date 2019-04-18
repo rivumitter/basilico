@@ -1,0 +1,178 @@
+<html>
+<head>
+<style>
+a:link {
+    color:white;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:visited {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color:white;
+    background-color: transparent;
+    text-decoration:none;
+}
+div.img{
+border:1px solid black;}
+div.img1{
+border:1px solid black;}
+div.img:hover{
+border:5px;}
+div.img1:hover{
+border:5px;}
+.button{
+		background-color:transparent;
+		position:relative;
+		left:40px;
+		color:white;
+		padding:15px 40px 10px;
+		text-align:center;
+		display:inline-block;
+		font-size:18px;
+		margin:2px 10px;
+		transition-duration:0.2s;
+		cursor:pointer;}
+.button1{
+	background-color:transparent;
+	border-radius:4px;}
+.button1:hover{
+background-color:transparent;
+border:white;
+color:white;
+border:2px solid white;
+border radius:2px;
+box-shadow:5px 5px 3px 3px;}
+		.card-container {
+  cursor: pointer;
+  height:300px;
+  perspective:800px;
+  position: relative;
+  left:500px;
+   width:600px;
+}
+.card {
+    position: absolute;
+	width:100%;
+	height:100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  width:100%;
+  position: absolute;
+  overflow: hidden;
+ 
+}
+.card .back {
+  background: #eaeaed;
+  color: #0087cc;
+  padding-top:10px;
+   text-align: center;
+  transform: rotateY(180deg);
+}
+@keyframes image { 
+		
+	0% { left: 0%; }
+	15% { left: 0%; }
+	20% { left: -100%; }
+	35% { left: -100%; }
+	40% { left: -200%; }
+	55% { left: -200%; }
+	60% { left: -300%; }
+	75% { left: -300%; }
+	80% { left: -400%; }
+	95% { left: -400%; }
+	100%{ left: -500%; }
+	}
+div#slider { overflow:hidden; }
+div#slider figure img { width: 16.666666667%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 18s image infinite; 
+}
+</style>
+</head>
+<body style="background-image:url(images/img2.jpg)">
+<h1 style="text-align:center; color:white; font-size:50px; font-family:algerian;">BASILICO</h1>
+<div id="menu">
+<hr>
+<a href="index.html" target="_parent"><button class="button button1">HOME</button></a>
+<a href="intr1.html" target="_parent"><button class="button button1">VIEW OF INTERIOR</button></a>
+<a href="menu1.html" target="_parent"><button class="button button1">  MENU </button></a>
+<a href="offers1.html" target="_parent"><button class="button button1">OFFERS</button></a>
+<a href="contact1.html" target="_parent"><button class="button button1">CONTACT-US</button></a>
+<a href="feedback1.html" target="_parent"><button class="button button1">FEEDBACK</button></a>
+<hr>
+<div>
+	<p>
+	<table border="2" align="center">
+			<th width="350" style="color:white; font-size:20px;"><marquee direction="up" height="300" scrollamount="3"><center>WE ARE OPEN FROM 9AM-9PM   </b><p>LUNCH SERVICES STARTS FROM 12PM</p></br><p>DINNER SERVICES FROM 7:30PM</p></br><p>LET'S JOIN THE WORLD OF ITALIAN FOOD</p><center></marquee></th>
+<th width="480" height="300"><h6 style="text-align:center; color:white; font-size:30px; font-family:italic; padding-top:30px;">BY DAY</h6><div class="img"><div id="slider">
+		<figure>
+		<img src= "images/dish.jpg" width="400" height="300"alt>
+		<img src= "images/d15.jpg" width="400" height="300"alt>
+		<img src="images/d4.jpg" width="400" height="300" alt>
+		<img src="images/d5.jpg" width="400" height="300"alt>
+		<img src="images/d6.jpg" width="400" height="300"alt>
+		<img src= "images/dish.jpg" width="400" height="300"alt>
+		</figure>
+	</div></th>
+<th width="480" height="300"><h6 style="text-align:center; color:white; font-size:30px; font-family:italic; padding-top:30px;">BY NIGHT</h6><div class="img1"><div id="slider">
+<figure>
+		<img src= "images/dish2.jpg" width="400" height="300"alt>
+		<img src= "images/d11.jpg" width="400" height="300"alt>
+		<img src="images/d12.jpg" width="400" height="300" alt>
+		<img src="images/d13.jpg" width="400" height="300"alt>
+		<img src="images/d14.jpg" width="400" height="300"alt>
+		<img src="images/dish2.jpg"  width="420" height="300">
+		</figure></div>
+</th>
+		</table>
+		</P>
+		<table border="0"width="1350" align="left">
+		<tr>
+		<th width="320" height="200"><img src="images/dish1.gif" width="300" height="180"></th>
+		<th></th>
+		</tr>
+		<tr>
+		<th width="320" height="200"><img src="images/dish3.gif" width="300" height="180"></th>
+		<th></th>
+		</tr>
+		</table>
+		<p></p>
+		<div class="card-container">
+  <div class="card">
+    <div class="side"><img src="images/res.jpg" width="600px" height="300px"></div>
+    <div class="side back"><form><p></p>NAME: <input type="text" name="name" required=""><p></p></br>CONTACT NO: <input type="text" name="contact" required=""><p></p></br>
+	BOOK FOR: <select name="number">
+	<option name="none" value="0"></option>
+	<option name="one" value="2">two</option>
+	<option name="two" value="4">four</option>
+	<option name="three" value="8">eight</option></select>
+	<p></p></br>
+	DATE: <input type="date"/>
+	TIME: <input type="time"/><p></p>
+	<input type="submit" name="submit" value="Get your table">          
+	<input type="submit" name="cancel" value="Cancel" onclick="Window.open('site1.html')"></form>
+		</div>
+  </div>
+</div>
+	</body>
+	</html>
+	
